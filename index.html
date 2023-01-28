@@ -7,6 +7,30 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link rel="shortcut icon" type="image/x-icon" href="hn_favicon.png?">
+		
+		<style>
+			:root {
+				--intro-flex-description-display: inline-flex; 
+				--intro-flex-description-width: 70%; 
+				--intro-flex-image-width: 30%; 
+			}
+
+			intro-flex-container {
+				display:flex;
+				/* align-items: center; */
+			}
+
+			@media screen and (max-width: 480px) {
+				*{
+					--intro-flex-description-display: block; 
+					--intro-flex-description-width: 100%; 
+					--intro-flex-image-width: 100%; 
+				}
+				
+			}
+
+		</style>
+
 	</head>
 	<body class="is-preload">
 		<!-- Wrapper -->
@@ -22,15 +46,23 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-
 							<header>
-								<div>
-									<h1>My Name Is Hugo Ng</h1>
-									<p>Welcome to my portfolio. This is where I demonstrate some of my data science and engineering projects.</p>
+								<div class="intro-flex-container" style="display:var(--intro-flex-description-display);
+									width:100%; margin-bottom:8px;">
+									
+									<div style="display:inline-block; width:var(--intro-flex-description-width); align-self: center;"> 
+										<h1 style="display:inline-block;">My Name Is Hugo Ng</h1>
+										<br>
+										<p style="display:inline-block;">Welcome to my portfolio. This is where I demonstrate some of my data science and engineering projects.</p>
+									</div>
+
+									<div style="display:inline-block; width:var(--intro-flex-image-width); align-self: center;"> 
+										<img style="border-radius:50%; max-width:100%; object-fit: contain;" 
+											class="displayProfile" src="images/hugo_ryan_ng.jpg" alt="Hugo Ryan Ng">
+										</img>
+									</div>
+
 								</div>
-								
-								<!-- <img style="border-radius: 50%; width:20%;" class="displayProfile" src="images/hugo_ryan_ng.jpg" alt="Hugo Ryan Ng"> -->					
-								
 							</header>
 
 
