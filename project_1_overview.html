@@ -7,7 +7,41 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link rel="shortcut icon" type="image/x-icon" href="hn_favicon.png?">
+
+		<style>
+			.responsive-iframe {
+				max-width: 100%;
+				padding-top: 79%; /* aspect ratio is 745:945 */
+				position: relative;
+				width: 100%;
+			}
+
+			.responsive-iframe iframe {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+
+			:root {
+				--map-title-size: 100%; 
+				--map-subtitle-size: 95%; 
+			}
+
+			@media screen and (max-width: 505px) {
+				*{
+					--map-title-size: 67%; 
+					--map-subtitle-size: 64%; 
+				}
+				
+			}
+		</style>
+
 	</head>
+
+
+
 	<body class="is-preload">
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -40,7 +74,18 @@
 							<h3>Interactive map</h3>
 							<p>For instance, this is one of the plots in my analysis. It tells us the number of fire or false alarm mobilizations of the LFB in London boroughs and the City of London from 2009 to 2021, which reflects LFB's resource intensity in each region. You can move your mouse cursor over the map to see the region names and figures:</p>
 							</div>
-							<object data="F_inc_map.html" style="width:1000px;height:700px;"></object>
+							
+							<div style="text-align: center;">
+								<b style="font-size:var(--map-title-size); font-family:'Trebuchet MS'">Number of Fire/False Alarm Incidents by Borough (2009-2021)</b>
+								<br>
+								<b style="font-size:var(--map-subtitle-size); font-family:'Trebuchet MS'">Hover cursor over regions to see details</b>
+							</div>
+							
+							
+							<div class="responsive-iframe">
+								<iframe src="F_inc_map_interactive.html" width="945" height="745" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+							</div>
+							
 
 							<h3>More details</h3>
 							<p>If you want to see the <b>summary notebook</b> of my analysis, <b><a href="project_1_summary.html">click here</a></b>. It is around 30% of the full code.</p>
