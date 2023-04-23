@@ -1,87 +1,214 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Project 4</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<link rel="shortcut icon" type="image/x-icon" href="hn_favicon.ico?">
-		<style>
-			@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
-		</style>
-	</head>
-	<body class="is-preload">
-		<!-- Wrapper -->
-			<div id="wrapper">
-				<!-- Header -->
-					<header id="header">
-						<div class="inner">
-							<!-- Redirect to home page -->
-							<a href="index.html" class="logo">
-								<span class="symbol"></span><span class="title"><b>&larr;</b>Back to home page</span>
-							</a>
-						</div>
-					</header>
+  <head>
+    <title>Project 4</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+    <link rel="shortcut icon" type="image/x-icon" href="hn_favicon.ico?" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+    </style>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Header -->
+      <header id="header">
+        <div class="inner">
+          <!-- Redirect to home page -->
+          <a href="index.html" class="logo">
+            <span class="symbol"></span
+            ><span class="title"><b>&larr;</b>Back to home page</span>
+          </a>
+        </div>
+      </header>
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
-							<h1>SQL Wrangling - NYPD Complaints - Project 4</h1>
-							<span class="image main"><img src="images/nypdCar.jpg" alt="" /></span>
-							<div class="col-6 col-12-medium">
-								<h3>SQL techniques applied in this project</h3>
-								<ul>
-									<li>Filter (WHERE, HAVING, CASE)</li>
-									<li>Aggregation (COUNT, SUM, GROUP BY)</li>
-									<li>Subquery, CTE</li>
-									<li>Window function and friends (LAG, RANK, PARTITION BY, ORDER BY)</li>
-									<li>Date manipulation (DATEPART)</li>
-									<li>Table handling (DROP IF EXISTS, UPDATE)</li>
-								</ul>
-							</div>
-							<h3>Overview</h3>
-							
-							<p>In this project, I conducted data wrangling and then exploratory data analysis on the crimes reported to the New York City Police Department (NYPD) between January 2021 and June 2021 inclusive.</p>
-							<p>For data wrangling part, I first cleaned the data by handling wrong formats, invalid values, and unnecessary prefixes. Then, I enriched the data by assigning them more meaningful values, if needed.</p>
-							<p>For data analysis part, I explored the data in 8 directions. For example, I looked at incident types, boroughs, time periods, demographics, and some relationships among the aforementioned. According to the specific investigation, I transformed the data into a suitable format, and selected among metrics such as counts, percentages and ranks.</p>
-							<p>At the end of the analysis, I concluded the findings and proposed a call to action. These may serve to reflect on and even help guide public safety, NYPD’s resource management, and the government's policy design.</p>
-														
-							<h3>Interactive Infographic for NYPD's Crime Complaint Records</h3>
-							<p>The following infographic contains some statistics found in my SQL wrangling and analysis. To see more details, please scroll down to the end of this page.</p>
-							<div class="infogram-embed" data-id="9804a3fb-64bd-4a3f-a61e-41fcf41ba656" data-type="interactive" data-title="Project 4: NYPD Complaints"></div><script>!function(e,i,n,s){var t="InfogramEmbeds",d=e.getElementsByTagName("script")[0];if(window[t]&&window[t].initialized)window[t].process&&window[t].process();else if(!e.getElementById(n)){var o=e.createElement("script");o.async=1,o.id=n,o.src="https://e.infogram.com/js/dist/embed-loader-min.js",d.parentNode.insertBefore(o,d)}}(document,0,"infogram-async");</script><div style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px"><a href="https://infogram.com/9804a3fb-64bd-4a3f-a61e-41fcf41ba656" style="color:#989898!important;text-decoration:none!important;" target="_blank">Project 4: NYPD Complaints</a><br><a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow">Infogram</a></div>
-							
-							<p> </p>
-							<p> </p>
-							
-							<h3>More details</h3>
-							<p>If you want to see the <b>SQL query</b>, <b><a href="https://github.com/nghugo/Project_4/blob/main/p4_wrangling_v9.ipynb" target="_blank">click here</a></b> or the GitHub icon below. They take you to my project 4 repository ipynb notebook.</p>
-							<p>The NYPD Complaint Dataset used in this project came from <a href="https://data.cityofnewyork.us/Public-Safety/NYPD-Complaint-Data-Current-Year-To-Date-/5uac-w243" target="_blank">NYC Open Data</a>. There are no restrictions on the usage of this data. See NYC Open Data's <a href="https://opendata.cityofnewyork.us/faq/">FAQ</a> and <a href="https://www1.nyc.gov/home/terms-of-use.page">terms of use</a> for more details.</p>
-						</div>
-					</div>
+      <!-- Main -->
+      <div id="main">
+        <div class="inner">
+          <h1>SQL Wrangling - NYPD Complaints - Project 4</h1>
+          <span class="image main"
+            ><img src="images/nypdCar.jpg" alt=""
+          /></span>
+          <div class="col-6 col-12-medium">
+            <h3>SQL techniques applied in this project</h3>
+            <ul>
+              <li>Filter (WHERE, HAVING, CASE)</li>
+              <li>Aggregation (COUNT, SUM, GROUP BY)</li>
+              <li>Subquery, CTE</li>
+              <li>
+                Window function and friends (LAG, RANK, PARTITION BY, ORDER BY)
+              </li>
+              <li>Date manipulation (DATEPART)</li>
+              <li>Table handling (DROP IF EXISTS, UPDATE)</li>
+            </ul>
+          </div>
+          <h3>Overview</h3>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							<section>
-								<h2>Get in touch</h2>
-								<ul class="icons">
-									<li><a href="https://github.com/nghugo/Project_4/blob/main/p4_wrangling_v9.ipynb" class="icon brands style2 fa-github" target="_blank"><span class="label">GitHub</span></a></li>
-									<li><a href="https://www.linkedin.com/in/hugo-ryan-ng-312730197/" class="icon brands style2 fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
-									<li><a href="mailto:hugoryng@gmail.com" class="icon solid style2 fa-envelope" target="_blank"><span class="label">Email</span></a></li>
-								</ul>
-							</section>
-						</div>
-					</footer>
+          <p>
+            In this project, I conducted data wrangling and then exploratory
+            data analysis on the crimes reported to the New York City Police
+            Department (NYPD) between January 2021 and June 2021 inclusive.
+          </p>
+          <p>
+            For data wrangling part, I first cleaned the data by handling wrong
+            formats, invalid values, and unnecessary prefixes. Then, I enriched
+            the data by assigning them more meaningful values, if needed.
+          </p>
+          <p>
+            For data analysis part, I explored the data in 8 directions. For
+            example, I looked at incident types, boroughs, time periods,
+            demographics, and some relationships among the aforementioned.
+            According to the specific investigation, I transformed the data into
+            a suitable format, and selected among metrics such as counts,
+            percentages and ranks.
+          </p>
+          <p>
+            At the end of the analysis, I concluded the findings and proposed a
+            call to action. These may serve to reflect on and even help guide
+            public safety, NYPD’s resource management, and the government's
+            policy design.
+          </p>
 
-			</div>
+          <h3>Interactive Infographic for NYPD's Crime Complaint Records</h3>
+          <p>
+            The following infographic contains some statistics found in my SQL
+            wrangling and analysis. To see more details, please scroll down to
+            the end of this page.
+          </p>
+          <div
+            class="infogram-embed"
+            data-id="9804a3fb-64bd-4a3f-a61e-41fcf41ba656"
+            data-type="interactive"
+            data-title="Project 4: NYPD Complaints"
+          ></div>
+          <script>
+            !(function (e, i, n, s) {
+              var t = "InfogramEmbeds",
+                d = e.getElementsByTagName("script")[0];
+              if (window[t] && window[t].initialized)
+                window[t].process && window[t].process();
+              else if (!e.getElementById(n)) {
+                var o = e.createElement("script");
+                (o.async = 1),
+                  (o.id = n),
+                  (o.src =
+                    "https://e.infogram.com/js/dist/embed-loader-min.js"),
+                  d.parentNode.insertBefore(o, d);
+              }
+            })(document, 0, "infogram-async");
+          </script>
+          <div
+            style="
+              padding: 8px 0;
+              font-family: Arial !important;
+              font-size: 13px !important;
+              line-height: 15px !important;
+              text-align: center;
+              border-top: 1px solid #dadada;
+              margin: 0 30px;
+            "
+          >
+            <a
+              href="https://infogram.com/9804a3fb-64bd-4a3f-a61e-41fcf41ba656"
+              style="
+                color: #989898 !important;
+                text-decoration: none !important;
+              "
+              target="_blank"
+              >Project 4: NYPD Complaints</a
+            ><br /><a
+              href="https://infogram.com"
+              style="
+                color: #989898 !important;
+                text-decoration: none !important;
+              "
+              target="_blank"
+              rel="nofollow"
+              >Infogram</a
+            >
+          </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+          <p></p>
+          <p></p>
 
-	</body>
+          <h3>More details</h3>
+          <p>
+            If you want to see the <b>SQL query</b>,
+            <b
+              ><a
+                href="https://github.com/nghugo/Project_4/blob/main/p4_wrangling_v9.ipynb"
+                target="_blank"
+                >click here</a
+              ></b
+            >
+            or the GitHub icon below. They take you to my project 4 repository
+            ipynb notebook.
+          </p>
+          <p>
+            The NYPD Complaint Dataset used in this project came from
+            <a
+              href="https://data.cityofnewyork.us/Public-Safety/NYPD-Complaint-Data-Current-Year-To-Date-/5uac-w243"
+              target="_blank"
+              >NYC Open Data</a
+            >. There are no restrictions on the usage of this data. See NYC Open
+            Data's <a href="https://opendata.cityofnewyork.us/faq/">FAQ</a> and
+            <a href="https://www1.nyc.gov/home/terms-of-use.page"
+              >terms of use</a
+            >
+            for more details.
+          </p>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <div class="inner">
+          <section>
+            <h2>Get in touch</h2>
+            <ul class="icons">
+              <li>
+                <a
+                  href="https://github.com/nghugo/Project_4/blob/main/p4_wrangling_v9.ipynb"
+                  class="icon brands style2 fa-github"
+                  target="_blank"
+                  ><span class="label">GitHub</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/hugo-ryan-ng-312730197/"
+                  class="icon brands style2 fa-linkedin"
+                  target="_blank"
+                  ><span class="label">LinkedIn</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="mailto:hugoryng@gmail.com"
+                  class="icon solid style2 fa-envelope"
+                  target="_blank"
+                  ><span class="label">Email</span></a
+                >
+              </li>
+            </ul>
+          </section>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
