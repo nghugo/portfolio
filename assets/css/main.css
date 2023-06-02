@@ -25,14 +25,6 @@ section, summary, time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;}
 
-<<<<<<< HEAD
-=======
-img {
-	max-width: 100%;
-	height: auto;
-}
->>>>>>> dd81f1be62a85018d0b8eb5733b3d7ea577725f1
-
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
