@@ -7,34 +7,8 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link rel="shortcut icon" type="image/x-icon" href="hn_favicon.ico?">
-		<style>
-			@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
-		</style>
-		
-		<style>
-			:root {
-				--intro-flex-description-display: inline-flex; 
-				--intro-flex-description-width: 70%; 
-				--intro-flex-image-width: 30%; 
-			}
-
-			intro-flex-container {
-				display:flex;
-				/* align-items: center; */
-			}
-
-			@media screen and (max-width: 480px) {
-				*{
-					--intro-flex-description-display: block; 
-					--intro-flex-description-width: 100%; 
-					--intro-flex-image-width: 100%; 
-				}
-				
-			}
-
-		</style>
-
 	</head>
+	
 	<body class="is-preload">
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -50,21 +24,16 @@
 					<div id="main">
 						<div class="inner">
 							<header>
-								<div class="intro-flex-container" style="display:var(--intro-flex-description-display);
-									width:100%; margin-bottom:10px;">
-									
-									<div style="display:inline-block; width:var(--intro-flex-description-width); align-self: center;"> 
-										<h1 style="display:inline-block;">My Name Is Hugo Ng</h1>
-										<br>
-										<p style="display:inline-block; font-size:20px;">Welcome! These are some of my data science and engineering projects.</p>
+								<div id="intro-flex-container">
+									<div id="intro-flex-left-element"> 
+										<h1>Hello, My Name Is Hugo Ng</h1>
+										<p>These are some of my web engineering and data science projects.</p>
 									</div>
 
-									<div style="display:inline-block; width:var(--intro-flex-image-width); align-self: center;"> 
-										<img style="border-radius:50%; max-width:100%; object-fit: contain; padding:10px" 
-											class="displayProfile" src="images/hugo_ryan_ng.jpg" alt="Hugo Ryan Ng">
+									<div id="intro-flex-right-element"> 
+										<img class="displayProfile" src="images/hugo_ryan_ng.jpg" alt="Hugo Ryan Ng">
 										</img>
 									</div>
-
 								</div>
 							</header>
 
