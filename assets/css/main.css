@@ -3453,4 +3453,7 @@ body.is-menu-visible #menu .close {
   #intro-flex-right-element {
 	text-align: center;
   }
+  #intro-flex-container div img {
+	padding: 0;
+  }
 }
