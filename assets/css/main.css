@@ -3421,15 +3421,16 @@ body.is-menu-visible #menu .close {
 
 #intro-flex-left-element {
   flex: 7 1 auto;
+  text-align: left;
 }
 
 #intro-flex-right-element {
   flex: 3 1 auto;
+  text-align: right;
 }
 
 #intro-flex-container * {
   align-self: center;
-  text-align: left;
 }
 
 #intro-flex-container div p {
@@ -3441,11 +3442,15 @@ body.is-menu-visible #menu .close {
   width: 100%;
   max-width: 300px;
   object-fit: contain;
-  padding: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;  
 }
 
 @media screen and (max-width: 480px) {
   #intro-flex-container {
     flex-direction: column;
+  }
+  #intro-flex-right-element {
+	text-align: center;
   }
 }
