@@ -223,18 +223,22 @@ div.inner > h2,
 div.inner > h3,
 div.inner > h4,
 div.inner > h5,
-div.inner > h6
-
+div.inner > h6, 
+div.inner > a, 
 div.col-6 > h1,
 div.col-6 > h2,
 div.col-6 > h3,
 div.col-6 > h4,
 div.col-6 > h5,
-div.col-6 > h6
-
-{
+div.col-6 > h6,
+header > h1,
+header > h2,
+header > h3,
+header > h4,
+header > h5,
+header > h6 {
   text-align: left;
-} */
+}
 
 @media screen and (max-width: 1280px) {
   body,
