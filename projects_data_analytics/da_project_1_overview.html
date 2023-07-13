@@ -8,10 +8,14 @@
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
     <link rel="stylesheet" href="../assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,700,1,0"
+    />
     <noscript
       ><link rel="stylesheet" href="../assets/css/noscript.css"
     /></noscript>
-    <link rel="shortcut icon" type="image/x-icon" href="hn_favicon.ico?" />
+    <link rel="shortcut icon" type="image/x-icon" href="../hn_favicon.ico?" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
     </style>
@@ -54,8 +58,15 @@
         <div class="inner">
           <!-- Redirect to data analytics projects -->
           <a href="data_analytics.html" class="logo">
-            <span class="symbol"></span
-            ><span class="title"><b>&larr;</b>Back to data analytics projects</span>
+            <span class="symbol"></span>
+            <span class="title"
+              ><span
+                class="material-symbols-rounded"
+                style="vertical-align: middle"
+                >arrow_left_alt</span
+              >
+              Back to data analytics projects</span
+            >
           </a>
         </div>
       </header>
@@ -131,25 +142,45 @@
 
           <h3>More details</h3>
           <p>
-            If you want to see the <b>summary notebook</b> of my analysis,
-            <b
-              ><a href="da_project_1_summary.html" target="_blank"
-                >click here</a
-              ></b
-            >. It is around 30% of the full code.
+            To see the <b>summary notebook</b> of my exploratory data analysis (without code) or
+            the <b>full code</b>, click the relevant buttons below.
           </p>
-          <p>
-            If you want to see the <b>full code</b>,
-            <b
-              ><a
-                href="https://github.com/nghugo/fire_eda/blob/main/EDA%20-%20London%20Fire%20Brigade%20-%20Project%201.ipynb"
-                target="_blank"
-                >click here</a
-              ></b
+
+          <nav class="arrow-links">
+            <a
+              href="http://127.0.0.1:5500/projects_data_analytics/da_project_1_summary.html"
+              target="_blank"
             >
-            or the GitHub icon below. They take you to the London Fire Brigade EDA project repository
-            ipynb notebook.
-          </p>
+              <div class="arrow-link-container style1">
+                <div class="overlay-cover style1"></div>
+                <div class="overlay-text">
+                  <p>See EDA Summary</p>
+                  <div class="arrow">
+                    <span class="material-symbols-rounded"
+                      >arrow_right_alt</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a
+              href="https://github.com/nghugo/fire_eda/blob/main/EDA%20-%20London%20Fire%20Brigade%20-%20Project%201.ipynb"
+              target="_blank"
+            >
+              <div class="arrow-link-container style1">
+                <div class="overlay-cover style1"></div>
+                <div class="overlay-text">
+                  <p>See Full Code</p>
+                  <div class="arrow">
+                    <span class="material-symbols-rounded"
+                      >arrow_right_alt</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </a>
+          </nav>
         </div>
       </div>
 
