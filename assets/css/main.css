@@ -3685,4 +3685,8 @@ article.split-pane h2 {
   .arrow-links {
     flex-direction: column;
   }
+  .arrow-link-container {
+    width: 100%;
+  }
+  
 }
