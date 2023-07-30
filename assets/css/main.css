@@ -3529,6 +3529,11 @@ article div.cover {
   transition: all 0.3s ease-in, transform;
 }
 
+article.split-pane a:focus-visible div {
+  outline: -webkit-focus-ring-color auto 1px;
+  outline-offset: 3px;
+}
+
 article div.blue-cover {
   background-color: rgba(2, 179, 207, 85%);
 }
@@ -3687,6 +3692,21 @@ article.split-pane h2 {
   }
   .arrow-link-container {
     width: 100%;
-  }
-  
+  }  
+}
+
+/* database schema diagram */
+.schema-figure {
+  max-width: 100%; 
+  text-align: center; 
+  margin-bottom: 1em;
+}
+
+.schema-figure img {
+  max-width: 100%;
+}
+
+.schema-figure figcaption {
+  font-size: 0.8rem; 
+  font-weight:600;
 }

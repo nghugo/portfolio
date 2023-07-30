@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Web Dev Project 2</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,700,1,0"
+    />
+    <noscript
+      ><link rel="stylesheet" href="../assets/css/noscript.css"
+    /></noscript>
+    <link rel="shortcut icon" type="image/x-icon" href="../hn_favicon.ico?" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+    </style>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Header -->
+      <header id="header">
+        <div class="inner">
+          <!-- Redirect to home page -->
+          <a href="web_dev.html" class="logo">
+            <span class="symbol"></span
+            ><span class="title"
+              ><span
+                class="material-symbols-rounded"
+                style="vertical-align: middle"
+                >arrow_left_alt</span
+              >
+              Back to web development projects</span
+            >
+          </a>
+        </div>
+      </header>
+
+      <!-- Main -->
+      <div id="main">
+        <div class="inner">
+          <h1>Full Stack App - Tallymeet - Web Dev 2</h1>
+          <span class="image main"
+            ><img src="../images/clock-pen-phone.jpg" alt=""
+          /></span>
+          <div class="col-6 col-12-medium">
+            <h3>Tools/knowledge applied in this project</h3>
+            <ul>
+              <li>HTML, CSS, Django, PostgreSQL</li>
+              <li>Receiving, Validating, Processing, and Persisting User Input as CRUD operations</li>
+              <li>User Authentication, Password Reset</li>
+            </ul>
+          </div>
+          <h3>Overview</h3>
+          <p>
+            In this project, I created Tallymeet - a full stack app for users to identify optimal time slots to set up their next group meeting. 
+            A user first creates a poll containing various time slots for the group's consideration. 
+            The poll can then be shared by URL with group members, who indicate their availability during each time slot in three ways: "prefer", "yes", or "no".
+            Finally, Tallymeet aggregates the responses, and ranks the time slots to maximize the number of available participants.
+          </p>
+          <p>While the core feature of Tallymeet is to rank time slots, it is designed with flexiblity, convenience, and security in mind.
+            For example, users do not need to register for an account to create, share, or interact with Tallymeet polls. Accounts simply allow users to save polls in one place, but is not a prerequisite.
+            In addition, after a poll is created and time slots are defined, it can be immediately shared with the group for voting.
+            One can optionally set a poll password such that only the group of interest gets to access and interact with the poll.
+          </p>
+          
+          <h3>Database Schema</h3>
+          <a href="../images/tallymeet_schema_drawio.svg" target="_blank">
+            <figure class="schema-figure">
+              <img class="schema-image" src="../images/tallymeet_schema_drawio.svg" alt="database schema diagram">
+              <figcaption> Database Schema Diagram <br> (click to open in new tab) </figcaption>
+            </figure>
+          </a>
+
+          <h3>Compromises</h3>
+          <p>Tallymeet, as as demo project, along with its database are currently hosted on render.com under free plans. 
+            The database needs to be re-created every 90 days, meaning all data (polls, time slots, votes, accounts) will be permanently deleted periodically. 
+            Also, if the app has not been used in the recent 15 minutes, the server spin-up time is around 1 minute. 
+            I appreciate your understanding and patience in spite of these inconveniences.
+          </p>
+
+          <h3>More details</h3>
+          <p>
+            To see the <b>full code</b> or to open the
+            <b>live demo</b>, click the relevant links below.
+          </p>
+          <nav class="arrow-links">
+            <a href="https://github.com/nghugo/tallymeet">
+              <div class="arrow-link-container style5">
+                <div class="overlay-cover style5"></div>
+                <div class="overlay-text">
+                  <p>See Full Code</p>
+                  <div class="arrow">
+                    <span class="material-symbols-rounded"
+                      >arrow_right_alt</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="https://tallymeet.onrender.com/">
+              <div class="arrow-link-container style5">
+                <div class="overlay-cover style5"></div>
+                <div class="overlay-text">
+                  <p>Open Form</p>
+                  <div class="arrow">
+                    <span class="material-symbols-rounded"
+                      >arrow_right_alt</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </a>
+          </nav>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <div class="inner">
+          <section>
+            <h2>Get in touch</h2>
+            <ul class="icons">
+              <li>
+                <a
+                  href="https://github.com/nghugo/tallymeet"
+                  class="icon brands style2 fa-github"
+                  ><span class="label">GitHub</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/hugo-ryan-ng-312730197/"
+                  class="icon brands style2 fa-linkedin"
+                  ><span class="label">LinkedIn</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="mailto:hugornprojects@gmail.com"
+                  class="icon solid style2 fa-envelope"
+                  ><span class="label">Email</span></a
+                >
+              </li>
+            </ul>
+          </section>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>
