@@ -3,18 +3,13 @@
   <head>
     <title>Web Dev Project 1</title>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="../assets/css/main.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,700,1,0"
     />
-    <noscript
-      ><link rel="stylesheet" href="../assets/css/noscript.css"
-    /></noscript>
+    <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
     <link rel="shortcut icon" type="image/x-icon" href="../hn_favicon.ico?" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
@@ -30,12 +25,8 @@
           <a href="web_dev.html" class="logo">
             <span class="symbol"></span
             ><span class="title"
-              ><span
-                class="material-symbols-rounded"
-                style="vertical-align: middle"
-                >arrow_left_alt</span
-              >
-              Back to web development projects</span
+              ><span class="material-symbols-rounded" style="vertical-align: middle">arrow_left_alt</span> Back to web
+              development projects</span
             >
           </a>
         </div>
@@ -45,104 +36,85 @@
       <div id="main">
         <div class="inner">
           <h1>Web Form - BNO 5+1 Requirements - Web Dev 1</h1>
-          <span class="image main"
-            ><img src="../images/calendar.jpg" alt=""
-          /></span>
+          <span class="image main"><img src="../images/calendar.jpg" alt="" /></span>
           <div class="col-6 col-12-medium">
             <h3>Tools/knowledge applied in this project</h3>
             <ul>
               <li>HTML, CSS, and JavaScript</li>
               <li>Responsive Web Design, Dynamic Web Form</li>
               <li>Receiving, Validating, and Processing User Input</li>
-              <li>Two Pointers, Sliding Window</li>
+              <li>Sliding Window Algorithm</li>
             </ul>
           </div>
           <h3>Overview</h3>
-          
-          <p style="color:red;">(updating: description temporarily hidden)</p>
 
-          <!-- <p>
-            In this project, I created a web form to aid users who are applying
-            for UK Indefinite Leave to Remain (ILR), also known as settled
-            status, in planning their absences from the UK, without violating
-            the constraints of their applications.
-          </p>
           <p>
-            For a successful application, the applicant must not have been
-            outside of the UK for more than 180 whole days in any 12 month
-            period for the past 5 years.
+            In this project, I created a web form to help BNO visa holders plan absences and qualify for UK Indefinite
+            Leave to Remain (ILR) and British Citizenship. The entire process takes a minimum of 6 years, and is commonly
+            referred to as BNO 5+1. For successful applications, the applicant must not have been away from the UK for
+            too many days during certain time intervals known as qualifying periods. Violation of these constraints can
+            have severe consequences, as it means that the application is void and potentially years of progress are
+            completely wiped.
           </p>
-          <p>
-            Based on user input regarding their qualifying period start date and
-            absent periods, the form will inform the user if they have violated
-            the application constraints, and if so, when the earliest day to
-            restart their 5-year qualifying period will be. The user can
-            optionally suppply a projection date to check their remaining
-            absences on that day, based on the number of absences in the past 12
-            month period or since the start of the application, whichever is
-            earlier.
-          </p>
-          <p>
-            If the user supplies invalid input, such as incomplete dates or an
-            interval with start later than end, the form will catch the errors,
-            highlight them for the user, and request resubmission.
-          </p> -->
 
-          <h3>Web Form for Checking ILR Validity</h3>
+          <p>
+            While the requirements are precisely defined, it can be tricky to keep track of one's absences. It is not
+            easy to calculate by hand how one's previous absences will affect their number of remaining absences in the
+            future, and whether the constraints of their applications have been or will be violated. This is especially
+            the case when one's absences are numerous and scattered.
+          </p>
 
-          <div style="width: 100%; margin-bottom: 32px">
-            <iframe
-              src="https://nghugo.github.io/bno_checker/"
-              style="display: block; border: none; height: 1300px; width: 100%"
-            >
-              <p>Your browser does not support iframes.</p>
-            </iframe>
+          <p>
+            To resolve this difficulty, I created a web form for users to check if their absences are within
+            constraints, and to project the number of remaining absences they will have in the future. Once the user
+            submits the form, the input is validated, followed by computation via sliding window algorithms, and finally
+            the display of categorized results.
+          </p>
+
+          <h3>Detailed Explanation</h3>
+          <p>
+            I have written extensively about the problem setting, how the calculator works, and the computed results in
+            the following page:
+          </p>
+          <div class="arrow-link-container style3">
+            <a href="https://nghugo.github.io/bno_checker/info">
+              <div class="overlay-cover style3"></div>
+              <div class="overlay-text">
+                <p>See Explanation</p>
+                <div class="arrow">
+                  <span class="material-symbols-rounded">arrow_right_alt</span>
+                </div>
+              </div>
+            </a>
           </div>
 
-          <h3>More details</h3>
-          <p>
-            To see the <b>full code</b> or to open the
-            <b>form in a separate tab</b>, click the relevant links below.
-          </p>
+          <h3>Web Form for Checking BNO Validity</h3>
+          <p>To see the <b>full code</b> or to use the <b>form</b>, click the relevant links below.</p>
           <nav class="arrow-links">
             <div class="arrow-link-container style3">
-            <a href="https://github.com/nghugo/bno_checker">
+              <a href="https://github.com/nghugo/bno_checker">
                 <div class="overlay-cover style3"></div>
                 <div class="overlay-text">
                   <p>See Full Code</p>
                   <div class="arrow">
-                    <span class="material-symbols-rounded"
-                      >arrow_right_alt</span
-                    >
+                    <span class="material-symbols-rounded">arrow_right_alt</span>
                   </div>
                 </div>
               </a>
             </div>
 
             <div class="arrow-link-container style3">
-            <a href="https://nghugo.github.io/bno_checker/">
+              <a href="https://nghugo.github.io/bno_checker/">
                 <div class="overlay-cover style3"></div>
                 <div class="overlay-text">
                   <p>Open Form</p>
                   <div class="arrow">
-                    <span class="material-symbols-rounded"
-                      >arrow_right_alt</span
-                    >
+                    <span class="material-symbols-rounded">arrow_right_alt</span>
                   </div>
                 </div>
               </a>
             </div>
           </nav>
-
-          <p style="color:red;">(updating: references temporarily hidden)</p>
-          <!-- <p>
-            If you want to see the official requirements of ILR regarding
-            absences from the UK,
-            <a
-              href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/939345/calculating-continuous-period-v22.0ext.pdf"
-              >click here</a
-            >.
-          </p> -->
         </div>
       </div>
 
@@ -153,23 +125,17 @@
             <h2>Get in touch</h2>
             <ul class="icons">
               <li>
-                <a
-                  href="https://github.com/nghugo/bno_checker"
-                  class="icon brands style2 fa-github"
+                <a href="https://github.com/nghugo/bno_checker" class="icon brands style2 fa-github"
                   ><span class="label">GitHub</span></a
                 >
               </li>
               <li>
-                <a
-                  href="https://www.linkedin.com/in/hugo-ryan-ng-312730197/"
-                  class="icon brands style2 fa-linkedin"
+                <a href="https://www.linkedin.com/in/hugo-ryan-ng-312730197/" class="icon brands style2 fa-linkedin"
                   ><span class="label">LinkedIn</span></a
                 >
               </li>
               <li>
-                <a
-                  href="mailto:hugornprojects@gmail.com"
-                  class="icon solid style2 fa-envelope"
+                <a href="mailto:hugornprojects@gmail.com" class="icon solid style2 fa-envelope"
                   ><span class="label">Email</span></a
                 >
               </li>
