@@ -2003,6 +2003,7 @@ ul {
 
 ul li {
   padding-left: 0.5em;
+  text-align: left;
 }
 
 ul.alt {
