@@ -2516,6 +2516,7 @@ table td {
 
 table.icontable td {
   vertical-align: middle;
+  text-align: left;
 }
 
 table.icontable th {
