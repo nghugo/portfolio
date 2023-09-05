@@ -46,29 +46,152 @@
         <div class="inner">
           <h1>API Fetch & Display - Santander Cycles - Web Dev 3</h1>
           <span class="image main"
-            ><img src="../images/towerBridgeNight.jpg" alt=""
+            ><img src="../images/santanderDocksWide.jpg" alt=""
           /></span>
           <div class="col-6 col-12-medium">
             <h3>Tools/knowledge applied in this project</h3>
             <ul>
               <li>React, Material UI</li>
               <li>Fetch real-time data from various APIs</li>
-              <li>Autocomplete input and snackbar feedback components for increased accessibility</li>
+              <li>
+                Autocomplete input and snackbar feedback components to
+                increase accessibility
+              </li>
               <li>Marker clustering for performant map rendering</li>
-              <li>Responsive web design to accommodate a wide range of screen sizes </li>
+              <li>
+                Responsive web design to accommodate a wide range of screen
+                sizes
+              </li>
             </ul>
           </div>
           <h3>Overview</h3>
-          <p>x</p>
-          
+          <p>
+            Santander Cycles is a bicycle sharing service. It is intended for
+            short commutes that replace driving or the public transport, while
+            providing the convenience of one-way rentals. This means that you
+            can rent a bicycle from any of its stations, cycle your planned
+            trip, then return it to a different station.
+          </p>
+
+          <p>
+            In this project, I created the Santander Cycles Companion app as an
+            all-in-one platform for your Santander Cycles usage within the
+            London area. It provides real-time insight into the availability of
+            bicycles at every station, and surrounding information such as
+            stations near a given location, routing, and the weather.
+          </p>
+
+          <h3>List of Features</h3>
+          <ul>
+            <li>
+              Inspect the availabilities of bicycles (standard and electric) and
+              the number of empty docks at every station *
+            </li>
+            <li>
+              Search for stations near a location by name or postcode,
+              then inspect the aerial view
+            </li>
+            <li>
+              Set routing from station to station to get directions, distance,
+              and the expected cycling duration
+            </li>
+            <li>
+              View London weather information to see if it is suitable for
+              cycling
+            </li>
+          </ul>
+          <p>
+            * You can still park nearby a station at no extra cost when all
+            docks are occupied
+          </p>
+
+          <h3>Elements of the Map Explained</h3>
+          <table class="icontable">
+            <tr>
+              <th style="width: 120px">Icon</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>
+                <img
+                  src="../images/santander-cycles/cluster marker_eg.png"
+                  alt="cluster of markers"
+                  width="40"
+                />
+              </td>
+              <td>
+                Represents a cluster of bicycle stations in the vicinity. If you
+                zoom into the map further, the cluster will burst into smaller
+                clusters and/or individual cycle stations. The value in the blue
+                circle indicates the total count of individual cycle stations.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img
+                  src="../images/santander-cycles/bike_pin.png"
+                  alt="station marker"
+                  width="40"
+                />
+              </td>
+              <td>
+                Represents a bicycle station. A station contains multiple bicycle
+                docks, each of which can hold a bicycle. Clicking the marker
+                reveals a popover of station details.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img
+                  src="../images/santander-cycles/popover_details_eg.png"
+                  alt="popover details"
+                  width="120"
+                />
+              </td>
+              <td>Is a popover of station details. It displays the number of bicycles (standard and electric) currently available to be rented from a station, and the number of unoccupied docks.</td>
+            </tr>
+            <tr>
+              <td>
+                <img
+                  src="../images/santander-cycles/search_pin.png"
+                  alt="search pin"
+                  width="40"
+                />
+              </td>
+              <td>Represents the searched location if you use the search bar.</td>
+            </tr>
+          </table>
+
+          <h3>APIs Used</h3>
+          <ul>
+            <li>
+              Transport for London Santander Cycles API to retrieve bicycle
+              availabilities at stations
+            </li>
+            <li>Google Maps Embed API to display map on website</li>
+            <li>
+              Google Maps JavaScript API to render markers and clusters of
+              markers on map
+            </li>
+            <li>
+              Google Maps Directions API to render route on map and calculate
+              the time and duration
+            </li>
+            <li>LocationIQ API for forward geocoding with autocomplete</li>
+            <li>WeatherAPI to retrieve weather information</li>
+          </ul>
+
           <h3>The Santander Cycles Companion app</h3>
           <p>
-            To see the <b>full code</b> or the
-            <b>live demo</b>, click the relevant links below.
+            To see the <b>full code</b> or the <b>live demo</b>, click the
+            relevant links below.
           </p>
           <nav class="arrow-links">
             <div class="arrow-link-container style6">
-            <a class="arrow-link" href="https://github.com/nghugo/santander-cycles">
+              <a
+                class="arrow-link"
+                href="https://github.com/nghugo/santander-cycles"
+              >
                 <div class="overlay-cover style6"></div>
                 <div class="overlay-text">
                   <p>See Full Code</p>
@@ -82,7 +205,7 @@
             </div>
 
             <div class="arrow-link-container style6">
-                <a class="arrow-link" href="https://santandercycles.netlify.app/">
+              <a class="arrow-link" href="https://santandercycles.netlify.app/">
                 <div class="overlay-cover style6"></div>
                 <div class="overlay-text">
                   <p>See Live Demo</p>
@@ -93,7 +216,7 @@
                   </div>
                 </div>
               </a>
-              </div>
+            </div>
           </nav>
         </div>
       </div>
