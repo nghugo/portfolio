@@ -283,7 +283,7 @@ h1 {
   font-size: 2.75em;
   font-weight: 700;
   line-height: 1.3;
-  margin: 0 0 1em 0;
+  margin: 0 0 0.8em 0;
   letter-spacing: -0.035em;
 }
 
@@ -293,7 +293,7 @@ h1 a {
 
 @media screen and (max-width: 736px) {
   h1 {
-    font-size: 2em;
+    font-size: 1.5em;
     margin: 0 0 1em 0;
   }
 }
@@ -1903,15 +1903,6 @@ article.special {
   text-align: center;
 }
 
-header p {
-  margin-top: -1em;
-}
-
-@media screen and (max-width: 736px) {
-  header p {
-    margin-top: 0;
-  }
-}
 
 /* Icon */
 
@@ -2955,7 +2946,8 @@ body.is-touch .tiles article .content {
 /* Header */
 
 #header {
-  padding: 8em 0 0.1em 0;
+  padding: 2em 0 0.1em 0;
+  flex: 0 0 auto;
 }
 
 #header .logo {
@@ -2964,7 +2956,7 @@ body.is-touch .tiles article .content {
   color: inherit;
   font-weight: 900;
   letter-spacing: 0.35em;
-  margin: 0 0 2.5em 0;
+  margin: 0 0 1em 0;
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;
@@ -3096,6 +3088,9 @@ body.is-touch .tiles article .content {
   -ms-transition: opacity 0.45s ease;
   transition: opacity 0.45s ease;
   opacity: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 #menu {
@@ -3277,7 +3272,8 @@ body.is-menu-visible #menu .close {
 /* Main */
 
 #main {
-  padding: 0em 0 6em 0;
+  padding: 0em 0 3em 0;
+  flex: 1 0 auto;
 }
 
 @media screen and (max-width: 736px) {
@@ -3289,8 +3285,9 @@ body.is-menu-visible #menu .close {
 /* Footer */
 
 #footer {
-  padding: 5em 0 6em 0;
+  padding: 2.5em 0 2.5em 0;
   background-color: #f6f6f6;
+  flex: 0 0 auto;
 }
 
 #footer > .inner {
@@ -3351,7 +3348,7 @@ body.is-menu-visible #menu .close {
 
 @media screen and (max-width: 1280px) {
   #footer {
-    padding: 4em 0 4em 0;
+    padding: 2.5em 0 2.5em 0;
   }
 
   #footer > .inner section:nth-child(1) {
@@ -3473,14 +3470,24 @@ div#intro-flex-left-element span.name {
   font-size: 20px;
 }
 
-#intro-flex-container div img {
+#intro-flex-container div img.displayProfile {
   border-radius: 50%;
   width: 100%;
-  max-width: 300px;
+  max-width: 230px;
   min-width: 190px;
   object-fit: contain;
   padding-left: 10px;
   padding-bottom: 10px;
+}
+
+#intro-flex-container div#intro-flex-left-element p {
+  font-size: 1.3em;
+}
+
+@media screen and (max-width: 736px) {
+  h1 {
+    font-size: 2em;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -3500,7 +3507,7 @@ div#intro-flex-left-element span.name {
 .split-pane-container {
   box-sizing: border-box;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
   font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -3509,7 +3516,7 @@ div#intro-flex-left-element span.name {
 }
 
 article.split-pane {
-  min-height: 400px;
+  min-height: 300px;
   width: 48%;
   position: relative;
   background-size: cover;
