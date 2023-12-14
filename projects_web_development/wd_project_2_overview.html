@@ -48,53 +48,18 @@
           <span class="image main"
             ><img src="../images/clock-pen-phone.jpg" alt=""
           /></span>
-          <div class="col-6 col-12-medium">
-            <h3>Tools/knowledge applied in this project</h3>
-            <ul>
-              <li>HTML, CSS, Tailwind, Django, PostgreSQL</li>
-              <li>Receive, validate, process, and persist user input as CRUD operations</li>
-              <li>User authentication, password reset</li>
-              <li>Responsive web design to accommodate a wide range of screen sizes </li>
-            </ul>
-          </div>
-          <h3>Overview</h3>
-          <p>
-            Tallymeet is an app that helps users identify when to optimally schedule their next group meeting. 
-            A user first creates a poll containing various time slots for the group's consideration. 
-            The poll can then be shared by URL with group members, who indicate their availability during each time slot in three ways: "prefer", "yes", or "no".
-            Finally, Tallymeet aggregates the responses, and ranks the time slots to maximize the number of available participants.
-          </p>
-          <p>While the core feature of Tallymeet is to rank time slots, it is designed with flexiblity, convenience, and security in mind.
-            For example, users do not need to register for an account to create, share, or interact with Tallymeet polls. An account simply allows a user to save polls in one place, but is not a prerequisite.
-            In addition, after a poll is created and time slots are defined, it can be immediately shared with the group for voting.
-            One can optionally set a poll password such that only the group of interest gets to access and interact with the poll.
-          </p>
-          
-          <h3>Database Schema</h3>
-          <a href="../images/tallymeet_schema_drawio.svg" target="_blank">
-            <figure class="schema-figure">
-              <img class="schema-image" src="../images/tallymeet_schema_drawio.svg" alt="database schema diagram">
-              <figcaption> Database Schema Diagram <br> (click to open in new tab) </figcaption>
-            </figure>
-          </a>
-
-          <h3>Compromises</h3>
-          <p>Tallymeet, as a demo project, along with its database are currently hosted on render.com under low-cost plans. 
-            The database needs to be re-created every 90 days, meaning all data (polls, time slots, votes, accounts) will be permanently deleted periodically. 
-            I appreciate your understanding despite the inconvenience.
-          </p>
 
           <h3>The Tallymeet app</h3>
           <p>
-            To see the <b>full code</b> or the
-            <b>live demo</b>, click the relevant links below.
+            To see the <b>live demo</b> or the <b>full code</b>, click the
+            relevant links below.
           </p>
           <nav class="arrow-links">
             <div class="arrow-link-container style5">
-            <a class="arrow-link" href="https://github.com/nghugo/tallymeet">
+              <a class="arrow-link" href="https://tallymeet.onrender.com/">
                 <div class="overlay-cover style5"></div>
                 <div class="overlay-text">
-                  <p>See Full Code</p>
+                  <p>Live Demo</p>
                   <div class="arrow">
                     <span class="material-symbols-rounded"
                       >arrow_right_alt</span
@@ -103,12 +68,11 @@
                 </div>
               </a>
             </div>
-
             <div class="arrow-link-container style5">
-                <a class="arrow-link" href="https://tallymeet.onrender.com/">
+              <a class="arrow-link" href="https://github.com/nghugo/tallymeet">
                 <div class="overlay-cover style5"></div>
                 <div class="overlay-text">
-                  <p>See Live Demo</p>
+                  <p>GitHub</p>
                   <div class="arrow">
                     <span class="material-symbols-rounded"
                       >arrow_right_alt</span
@@ -116,7 +80,102 @@
                   </div>
                 </div>
               </a>
-              </div>
+            </div>
+          </nav>
+          <div class="col-6 col-12-medium">
+            <h3>Tools/knowledge applied in this project</h3>
+            <ul>
+              <li>HTML, CSS, Tailwind, Django, PostgreSQL</li>
+              <li>
+                Receive, validate, process, and persist user input as CRUD
+                operations
+              </li>
+              <li>User authentication, password reset</li>
+              <li>
+                Responsive web design to accommodate a wide range of screen
+                sizes
+              </li>
+            </ul>
+          </div>
+          <h3>Overview</h3>
+          <p>
+            Tallymeet is an app that helps users identify when to optimally
+            schedule their next group meeting. A user first creates a poll
+            containing various time slots for the group's consideration. The
+            poll can then be shared by URL with group members, who indicate
+            their availability during each time slot in three ways: "prefer",
+            "yes", or "no". Finally, Tallymeet aggregates the responses, and
+            ranks the time slots to maximize the number of available
+            participants.
+          </p>
+          <p>
+            While the core feature of Tallymeet is to rank time slots, it is
+            designed with flexiblity, convenience, and security in mind. For
+            example, users do not need to register for an account to create,
+            share, or interact with Tallymeet polls. An account simply allows a
+            user to save polls in one place, but is not a prerequisite. In
+            addition, after a poll is created and time slots are defined, it can
+            be immediately shared with the group for voting. One can optionally
+            set a poll password such that only the group of interest gets to
+            access and interact with the poll.
+          </p>
+
+          <h3>Database Schema</h3>
+          <a href="../images/tallymeet_schema_drawio.svg" target="_blank">
+            <figure class="schema-figure">
+              <img
+                class="schema-image"
+                src="../images/tallymeet_schema_drawio.svg"
+                alt="database schema diagram"
+              />
+              <figcaption>
+                Database Schema Diagram <br />
+                (click to open in new tab)
+              </figcaption>
+            </figure>
+          </a>
+
+          <h3>Compromises</h3>
+          <p>
+            Tallymeet, as a demo project, along with its database are currently
+            hosted on render.com under low-cost plans. The database needs to be
+            re-created every 90 days, meaning all data (polls, time slots,
+            votes, accounts) will be permanently deleted periodically. I
+            appreciate your understanding despite the inconvenience.
+          </p>
+
+          <h3>The Tallymeet app</h3>
+          <p>
+            To see the <b>live demo</b> or the <b>full code</b>, click the
+            relevant links below.
+          </p>
+          <nav class="arrow-links">
+            <div class="arrow-link-container style5">
+              <a class="arrow-link" href="https://tallymeet.onrender.com/">
+                <div class="overlay-cover style5"></div>
+                <div class="overlay-text">
+                  <p>Live Demo</p>
+                  <div class="arrow">
+                    <span class="material-symbols-rounded"
+                      >arrow_right_alt</span
+                    >
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="arrow-link-container style5">
+              <a class="arrow-link" href="https://github.com/nghugo/tallymeet">
+                <div class="overlay-cover style5"></div>
+                <div class="overlay-text">
+                  <p>GitHub</p>
+                  <div class="arrow">
+                    <span class="material-symbols-rounded"
+                      >arrow_right_alt</span
+                    >
+                  </div>
+                </div>
+              </a>
+            </div>
           </nav>
         </div>
       </div>
