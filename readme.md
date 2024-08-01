@@ -1,2 +1,2 @@
 ## My Portfolio Page:
-https://nghugo.github.io/Portfolio/
+https://nghugo.github.io/portfolio/
